@@ -1,0 +1,81 @@
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 6px 29px -6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 6px 29px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 29px -6px rgba(0, 0, 0, 0.1); }
+  .nav .right-hand-nav-icons {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end; }
+    .nav .right-hand-nav-icons .icon-element {
+      margin-right: 15px;
+      margin-left: 15px;
+      font-size: 1.25em; }
+      .nav .right-hand-nav-icons .icon-element a {
+        color: lightgrey; }
+  .nav .left-hand-nav-elements {
+    display: flex;
+    flex: 2; }
+    .nav .left-hand-nav-elements .logo-and-hamburger {
+      width: 150px;
+      display: flex;
+      margin-right: 42px; }
+      .nav .left-hand-nav-elements .logo-and-hamburger svg {
+        height: 23px !important; }
+      .nav .left-hand-nav-elements .logo-and-hamburger .icon-element {
+        font-size: 1.25em; }
+        .nav .left-hand-nav-elements .logo-and-hamburger .icon-element a {
+          color: lightgrey; }
+    .nav .left-hand-nav-elements .search-wrapper .search-query-field {
+      height: 2.7em;
+      margin-top: -7px;
+      font-size: 0.75em;
+      padding-left: 5px;
+      border-radius: 3px;
+      border: 1px solid lightgray; }
+    @media screen and (max-width: 768px) {
+      .nav .left-hand-nav-elements .search-wrapper .search-query-field {
+        display: none; } }
+    @media screen and (max-width: 992px) {
+      .nav .left-hand-nav-elements .search-wrapper .search-query-field {
+        width: 300px; } }
+    @media screen and (min-width: 1200px) {
+      .nav .left-hand-nav-elements .search-wrapper .search-query-field {
+        width: 500px; } }
+
+.container {
+  width: 100vw;
+  margin-top: 105px;
+  display: flex;
+  justify-content: center; }
+  .container .video-embed {
+    width: 1280px;
+    margin-right: 20px; }
+  .container .sidebar .thumbs {
+    margin-top: 20px; }
+    .container .sidebar .thumbs .thumb {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      font-family: 'Roboto', 'Noto', sans-serif; }
+      .container .sidebar .thumbs .thumb img {
+        margin-right: 10px; }
+      .container .sidebar .thumbs .thumb .thumb-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; }
+        .container .sidebar .thumbs .thumb .thumb-content .thumb-heading {
+          font-weight: 500; }
+        .container .sidebar .thumbs .thumb .thumb-content .thumb-meta {
+          color: grey; }
+
+/*# sourceMappingURL=main.css.map */
