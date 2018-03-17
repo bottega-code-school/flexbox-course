@@ -5,18 +5,21 @@
   <meta charset='UTF-8'>
   <title></title>
 
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+
   <style>
-    * {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
+    html {
+      font-family: 'Oxygen', sans-serif;
     }
 
-    header {
-      padding: 1em;
+    body {
+      margin: 0px;
     }
 
     .navbar {
-      background: #e2e2e2;
+      background: #415068;
     }
 
     .navbar .toggle,
@@ -24,27 +27,31 @@
       display: inline-block;
     }
 
+
     .navbar .link {
       display: block;
-      width: 100%;
       text-align: center;
       padding: 1em;
       text-decoration: none;
-      background: seagreen;
+      background: #223047;
       color: white;
     }
 
     .navbar .link:hover,
     .navbar .link:active {
-      background: black;
+      color: #223047;
+      background: white;
     }
 
     .navbar .brand {
       width: 10em;
       text-align: center;
       padding: 1em;
-      background: black;
       color: white;
+    }
+
+    .navbar a {
+      text-decoration: none;
     }
 
     .navbar .toggle {
@@ -95,11 +102,13 @@
 
     @media (max-width: 48em) {
       .navbar.active .toggle {
-        background: seagreen;
+        background: #223047;
         color: white;
       }
+      .navbar .brand {
+        text-align: left;
+      }
       .navbar.active div {
-
         display: block;
       }
     }
@@ -108,14 +117,14 @@
 
 <body>
   <div class="navbar">
-    <a href="#" class="toggle" id="navHamburger"><i class="fa fa-reorder"></i></a>
-    <a href="#" class="brand">Brand</a>
+    <a href="#" class="toggle" id="navHamburger"><i class="fas fa-bars"></i></a>
+    <a href="#" class="brand">MyName</a>
     <div class="left">
       <a href="#" class="link">Link 1</a>
       <a href="#" class="link">Link 2</a>
     </div>
     <div class="right">
-      <a href="#" class="link">Right Link 2</a>
+      <a href="#" class="link">Link 3</a>
     </div>
   </div>
 </body>
